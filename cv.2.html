@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CV</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        .cv {
+            width: 90%;
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 35% 65%;
+        }
+
+        .left {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .right {
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkblue;
+            cursor: pointer;
+        }
+
+        h3 {
+            color: purple;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <div class="left">
+
+            <h1>Sitara Rayhanah Kabir Apollonia</h1>
+
+            <h2>Parents information</h2>
+
+            <h3>Father</h3>
+
+            <p>
+                Name- Md Imam Uddin Kabir<br>
+                Occupation- Additional Secretary<br>
+                Ministry of Fisheries and Livestock<br>
+                Contact-017 1502 4456
+            </p>
+
+            <h3>Mother</h3>
+
+            <p>
+                Name- Romena Afroz<br>
+                Occupation- housewife<br>
+                Contact-017 2693 1664
+            </p>
+
+            <h2>Education</h2>
+
+            <h3>GCE A Level</h3>
+
+            <p>
+                <strong>School:</strong> SFX Greenherald International School<br>
+                <strong>Years:</strong> 2025–2027
+            </p>
+
+            <p><strong>Subjects:</strong></p>
+
+            <ul>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>Mathematics</li>
+            </ul>
+
+            <h3>GCE O Level</h3>
+
+            <p>
+                <strong>Year:</strong> 2025<br>
+                <strong>Results:</strong> 7 A*s, 1 A, 1 B
+            </p>
+
+        </div>
+
+
+        <div class="right">
+
+            <img src="photon.jpg" class="profile">
+
+            <h2 onclick="toggleSection('experience')">Experience</h2>
+
+            <div id="experience">
+
+                <h3>Physics Laboratory Intern</h3>
+
+                <p>
+                    <strong>School:</strong> SFX Greenherald International School
+                </p>
+
+                <ul>
+                    <li>Assisted teachers during physics laboratory practicals.</li>
+                    <li>Maintained laboratory safety and organisation.</li>
+                    <li>Got hands-on experience with laboratory procedures and experiments.</li>
+                    <li>Guided junior students during experiments.</li>
+                </ul>
+
+            </div>
+
+
+            <h2 onclick="toggleSection('extracurricular')">
+                Extracurricular Activities
+            </h2>
+
+            <div id="extracurricular">
+
+                <h3>Treasurer – Greenherald Debating Society</h3>
+
+                <h3>Executive Officer, Public Affairs – FX 13 Chrome Science Club</h3>
+
+                <h3>Executive Officer – Greenherald Bangla Club</h3>
+
+                <ul>
+                    <li>Managed club finances and budgets.</li>
+                    <li>Helped organise cultural programmes and educational events.</li>
+                </ul>
+
+            </div>
+
+
+            <h2 onclick="toggleSection('skills')">Skills</h2>
+
+            <div id="skills">
+
+                <ul>
+                    <li>Microsoft Word</li>
+                    <li>Microsoft PowerPoint</li>
+                    <li>Microsoft Excel</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Fluent in English</li>
+                    <li>Basic proficiency in French</li>
+                </ul>
+
+            </div>
+
+
+            <h2>References</h2>
+
+            <h3>Md Imam Uddin Kabir</h3>
+
+            <p>
+                <strong>Relationship:</strong> Father<br>
+                <strong>Contact:</strong> 017 1502 4456<br>
+                <strong>Email:</strong> kabirimamuddin@gmail.com
+            </p>
+
+            <h3>Debashish Saha</h3>
+
+            <p>
+                <strong>Relationship:</strong> Teacher<br>
+                <strong>Contact:</strong> 017 1143 1471<br>
+                <strong>Email:</strong> sahadebashish471@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function toggleSection(id) {
+
+            var x = document.getElementById(id);
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
